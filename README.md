@@ -1,4 +1,6 @@
 # etl-collections
+[![NPM](https://nodei.co/npm/etl-collections.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/etl-collections/)
+<br><br>
 A util nodejs project for etl.
 
 ## install
