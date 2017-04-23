@@ -1,6 +1,6 @@
 {
     "name": "etl-collections",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A util nodejs project for etl.",
     "main": "index.js",
     "scripts": {
