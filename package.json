@@ -1,0 +1,27 @@
+{
+    "name": "etl-collections",
+    "version": "0.0.1",
+    "description": "A util nodejs project for etl.",
+    "main": "index.js",
+    "scripts": {
+        "pub": "npm run build && npm publish",
+        "build": "node utils/build.js",
+        "test": "node test"
+    },
+    "keywords": [
+        "etl",
+        "utils",
+        "idCard",
+        "mobile",
+        "nodejs"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wowtous/etl-collections.git"
+    },
+    "author": "Darebeat",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/wowtous/etl-collections/issues"
+    }
+}

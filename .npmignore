@@ -1,0 +1,6 @@
+data/*.csv
+data/*.txt
+node_modules
+**/.DS_Store
+*.log
+.idea
