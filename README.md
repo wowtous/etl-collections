@@ -29,6 +29,8 @@ var etl = require('etl-collections');
     - type     手机号码 运营商
 + @example
 ```js
+etl.mobile.query('15101332143')
+=>
 { 'province': '甘肃', city: '兰州', type: '中国移动' }
 ```
 
@@ -45,6 +47,8 @@ var etl = require('etl-collections');
     - enCountry 国家英文
 + @example
 ```js
+etl.mobile.getCountry('+8615101332143')
+=>
 { code: 'CN',
   number: '15101332143',
   country: '中国',
@@ -63,6 +67,8 @@ var etl = require('etl-collections');
     - number  国家号码编号
 + @example
 ```js
+etl.mobile.getInfo('CN')
+=>
 { code: 'CN', name: '中国', enName: 'China', number: '86' }
 ```
 
@@ -81,6 +87,8 @@ var etl = require('etl-collections');
     - gender    性别
 + @example
 ```js
+etl.idcard.query('371501199112025093')
+=>
 { areaId: '371501',
   areaName: '山东省聊城市市辖区',
   birthday: '19911202',
@@ -99,18 +107,21 @@ var etl = require('etl-collections');
     - areaName  区域名称
 + @example
 ```js
+etl.idcard.getArea('371501199112025093')
+=>
 { areaId: '371501',
   areaName: '山东省聊城市市辖区'}
 ```
 
 #### getBirthday
-+ @p-----
-aram id 号码 `371501199112025093`
++ @param id 号码 `371501199112025093`
 + @desc 解析中国身份证号码
 + @return {}
     - birthday  出生日期
 + @example
 ```js
+etl.idcard.getBirthday('371501199112025093')
+=>
 { birthday: '19911202' }
 ```
 
@@ -123,6 +134,8 @@ aram id 号码 `371501199112025093`
     - gender    性别
 + @example
 ```js
+etl.idcard.getGender('371501199112025093')
+=>
 { gender: '男' }
 ```
 
@@ -134,6 +147,8 @@ aram id 号码 `371501199112025093`
 + @return Boolean
 + @example
 ```js
+etl.idcard.isIdcard('371501199112025093')
+=>
 true
 ```
 
@@ -150,8 +165,11 @@ true
 + @return {Boolean}
 + @example
 
-> etl.lunar.isLeapYear(2017) // false
-
+```js
+etl.lunar.isLeapYear(2017)
+=>
+false
+```
 
 #### lunarToSolar
 -----
@@ -164,9 +182,9 @@ true
     - day 公历日
 + @example
 
-> etl.lunar.lunarToSolar(2016,12,23)
-
 ```js
+etl.lunar.lunarToSolar(2016,12,23)
+=>
 { year: 2017, month: 1, day: 20 }
 ```
 
@@ -178,9 +196,9 @@ true
 + @return {}
 + @example
 
-> etl.lunar.solarToLunar(2017,1,20)
-
 ```js
+etl.lunar.solarToLunar(2017,1,20)
+=>
 { zodiac: '猴',
   GanZhiYear: '丙申',
   GanZhiMonth: '辛丑',
@@ -207,9 +225,9 @@ true
 + @return {}
 + @example
 
-> etl.lunar.calendar(2017,1,false)
-
 ```js
+etl.lunar.calendar(2017,1,false)
+=>
 {
   firstDay: 0,
   monthDays: 31,
@@ -245,9 +263,9 @@ true
 + @return {}
 + @example
 
-> etl.lunar.solarCalendar(2017,1,false)
-
 ```js
+etl.lunar.solarCalendar(2017,1,false)
+=>
 { firstDay: 0,
   monthDays: 31,
   monthData:

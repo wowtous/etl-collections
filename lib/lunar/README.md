@@ -10,8 +10,9 @@
 + @return 闰月数 （月份从1开始）
 + @example
 
-> etl.lunar.getLunarLeapYear(2017) // 6
-
+```js
+etl.lunar.getLunarLeapYear(2017) => 6
+```
 
 #### getLunarYearDays
 
@@ -22,9 +23,9 @@
     - monthDays 该年每月的天数
 + @example
 
-> etl.lunar.getLunarYearDays(2017)
-
 ```js
+etl.lunar.getLunarYearDays(2017)
+=>
 { yearDays: 384,
   monthDays: [ 29, 30, 29, 30, 29, 29, 30, 29, 30, 29, 30, 30, 30 ] }
 ```
@@ -39,9 +40,9 @@
 + @return []
 + @example
 
-> etl.lunar.getLunarByBetween(2017,1,22)
-
 ```js
+etl.lunar.getLunarByBetween(2017,1,22)
+=>
 [ 2017, 0, 26 ]
 ```
 
@@ -58,8 +59,9 @@
 + @return {Number}
 + @example
 
-> etl.lunar.getDaysBetweenSolar(2017,1,22,2017,4,12) // 79
-
+```js
+etl.lunar.getDaysBetweenSolar(2017,1,22,2017,4,12) => 79
+```
 #### getDaysBetweenZheng
 
 + @param 农年，月(0-12，有闰月)，日
@@ -70,8 +72,9 @@
 + @return {Number}
 + @example
 
-> etl.lunar.getDaysBetweenZheng(2017,1,22) // 50
-
+```js
+etl.lunar.getDaysBetweenZheng(2017,1,22) => 50
+```
 
 #### getTerm
 
@@ -85,8 +88,9 @@
 + @return {Number}
 + @example
 
-> etl.lunar.getTerm(2017,5) // 20
-
+```js
+etl.lunar.getTerm(2017,5) => 20
+```
 
 #### getYearTerm
 
@@ -95,9 +99,9 @@
 + @return {}
 + @example
 
-> etl.lunar.getYearTerm(2017)
-
 ```js
+etl.lunar.getYearTerm(2017)
+=>
 { d0105: '小寒',
   d0120: '大寒',
   ...
@@ -112,8 +116,9 @@
 + @return {String}
 + @example
 
-> etl.lunar.getYearZodiac(2017) // 猴
-
+```js
+etl.lunar.getYearZodiac(2017) => 猴
+```
 
 #### cyclical
 
@@ -122,8 +127,9 @@
 + @return {String}
 + @example
 
-> etl.lunar.cyclical(2017) // 辛丑
-
+```js
+etl.lunar.cyclical(2017) => 辛丑
+```
 #### getLunarYearName
 
 + @param
@@ -133,8 +139,9 @@
 + @return {String}
 + @example
 
-> etl.lunar.getLunarYearName(2017,10) // 丙午
-
+```js
+etl.lunar.getLunarYearName(2017,10) => 丙午
+```
 #### getLunarDayName
 
 + @param {Number} year,month,day 公历年，月，日
@@ -142,8 +149,9 @@
 + @return {String}
 + @example
 
-> etl.lunar.getLunarDayName(2017,1,12) // 庚午
-
+```js
+etl.lunar.getLunarDayName(2017,1,12) => 庚午
+```
 
 #### getSolarMonthDays
 
@@ -154,8 +162,9 @@
 + @return {Number}
 + @example
 
-> etl.lunar.getSolarMonthDays(2017,1) // 28
-
+```js
+etl.lunar.getSolarMonthDays(2017,1) => 28
+```
 
 #### isLeapYear
 
@@ -164,8 +173,9 @@
 + @return {Boolean}
 + @example
 
-> etl.lunar.isLeapYear(2017) // false
-
+```js
+etl.lunar.isLeapYear(2017) => false
+```
 
 #### lunarToSolar
 
@@ -177,9 +187,9 @@
     - day 公历日
 + @example
 
-> etl.lunar.lunarToSolar(2016,12,23)
-
 ```js
+etl.lunar.lunarToSolar(2016,12,23)
+=>
 { year: 2017, month: 1, day: 20 }
 ```
 
@@ -190,9 +200,9 @@
 + @return {}
 + @example
 
-> etl.lunar.solarToLunar(2017,1,20)
-
 ```js
+etl.lunar.solarToLunar(2017,1,20)
+=>
 { zodiac: '猴',
   GanZhiYear: '丙申',
   GanZhiMonth: '辛丑',
@@ -218,9 +228,9 @@
 + @return {}
 + @example
 
-> etl.lunar.calendar(2017,1,false)
-
 ```js
+etl.lunar.calendar(2017,1,false)
+=>
 {
   firstDay: 0,
   monthDays: 31,
@@ -255,9 +265,9 @@
 + @return {}
 + @example
 
-> etl.lunar.solarCalendar(2017,1,false)
-
 ```js
+etl.lunar.solarCalendar(2017,1,false)
+=>
 { firstDay: 0,
   monthDays: 31,
   monthData:

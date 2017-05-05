@@ -10,6 +10,8 @@
     - type     手机号码 运营商
 + @example
 ```js
+etl.mobile.query('15101332143')
+=>
 { 'province': '甘肃', city: '兰州', type: '中国移动' }
 ```
 
@@ -25,6 +27,8 @@
     - enCountry 国家英文
 + @example
 ```js
+etl.mobile.getCountry('+8615101332143')
+=>
 { code: 'CN',
   number: '15101332143',
   country: '中国',
@@ -42,5 +46,7 @@
     - number  国家号码编号
 + @example
 ```js
+etl.mobile.getInfo('CN')
+=>
 { code: 'CN', name: '中国', enName: 'China', number: '86' }
 ```

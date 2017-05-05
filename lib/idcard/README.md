@@ -11,6 +11,8 @@
     - gender    性别
 + @example
 ```js
+etl.idcard.query('371501199112025093')
+=>
 { areaId: '371501',
   areaName: '山东省聊城市市辖区',
   birthday: '19911202',
@@ -28,6 +30,8 @@
     - areaName  区域名称
 + @example
 ```js
+etl.idcard.getArea('371501199112025093')
+=>
 { areaId: '371501',
   areaName: '山东省聊城市市辖区'}
 ```
@@ -39,6 +43,8 @@
     - birthday  出生日期
 + @example
 ```js
+etl.idcard.getBirthday('371501199112025093')
+=>
 { birthday: '19911202' }
 ```
 
@@ -50,6 +56,8 @@
     - gender    性别
 + @example
 ```js
+etl.idcard.getGender('371501199112025093')
+=>
 { gender: '男' }
 ```
 
@@ -60,5 +68,7 @@
 + @return Boolean
 + @example
 ```js
+etl.idcard.isIdcard('371501199112025093')
+=>
 true
 ```
