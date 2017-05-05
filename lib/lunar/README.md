@@ -261,7 +261,7 @@ etl.lunar.calendar(2017,1,false)
 + @param
     - {Number} year,month 公历年，月
     - {Boolean} fill 是否用上下月数据补齐首尾空缺，首例数据从周日开始
-+ @desc 获取指定公历月份的农历数据
++ @desc 获取指定公历月份的日历数据
 + @return {}
 + @example
 
